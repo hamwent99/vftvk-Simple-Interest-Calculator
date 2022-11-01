@@ -11,13 +11,31 @@
                 <label>Amount</label> <input type="number"  id="principal">  <br/><br/>
                 <label>Interest Rate</label>  <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25"   oninput="updateRate(this.value)"
                 onchange="updateRate(this.value)"/><span id="rate_val">10.25%</span> <br/><br/>
-                <label>No. of Years </label><input type="number"  id="years">  <br/><br/>
+                <label>No. of Years </label>
+                <!-- <input type="number"  id="years">  -->
+                  <select id="years" onchange="selectNumOfYears()">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                    <input type="hidden" name="checkyear" id="checkyear" value="">
+
+                 <br/><br/>
                 <button onclick="calculate()">Compute Interest</button> <br/><br/>
                 <div class="show_result hide" id="to-show">                  
-                    if you deposit<span id="p_amt"> </span><br/><br/>
-                    at an intrest rate of<span id="int_rate"> </span><br/>   <br/>         
-                    you will receive the amount of<span id="res"> </span><br/>  <br/>
-                    for the years<span id="for_years"> </span>
+                    if you deposit &nbsp;<span id="p_amt"> </span><br/><br/>
+                    at an intrest rate of &nbsp;<span id="int_rate"> </span><br/>   <br/>         
+                    you will receive the amount of &nbsp;<span id="res"> </span><br/>  <br/>
+                    for the years &nbsp;<span id="for_years"> </span>
                 </div>  
             </div>  
         </div>

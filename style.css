@@ -5,13 +5,13 @@ h1{color:grey;font-family:verdana; font-size: 30px; margin: 0 0 1em;}
 .datadiv {
     padding-left: 3em;
 }
-.hide {
+/*.hide {
   display: none;
   
 }
 .show {
   display: block;
-}
+}*/
 
 .datadiv label {
     min-width: 95px;
