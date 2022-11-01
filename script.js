@@ -9,14 +9,9 @@ function updateRate()
 
 // years option
 function selectNumOfYears() {
-  // var x = document.getElementById("years");
-  // var i = x.selectedIndex;
-  // document.getElementById("demo").innerHTML = x.options[i].text;
     var x = document.getElementById("years").selectedIndex;
-  var y = document.getElementById("years").options;
-  // alert("Index: " + y[x].index + " is " + y[x].text);
+    var y = document.getElementById("years").options;
     document.getElementById("checkyear").value = y[x].text;
-  alert(document.getElementById("checkyear").value);
 
 }
 //compute your simple interst
@@ -41,7 +36,7 @@ function calculate(){
     document.getElementById("res").innerHTML=SI;
 
     var element = document.getElementById('to-show');
-    if (element.classList.contains('hide') && principal != null && years != null && SI != null && SI != null) {
+    if (element.classList.contains('hide') && principal != null && years != null && SI != null && SI != null && principal != "") {
         element.classList.remove("hide");
         element.classList.add("show");
     } else {
