@@ -2,5 +2,20 @@ body {background-color:black;font-family:arial;color:white;}
 *{box-sizing: border-box;}
 h1{color:grey;font-family:verdana; font-size: 30px; margin: 0 0 1em;}
 .maindiv {background: #fff;color: black; width: 400px; padding : 20px; border-radius: 25px;}
+.datadiv {
+    padding-left: 3em;
+}
+.hide {
+  display: none;
+  
+}
+.show {
+  display: block;
+}
 
-
+.datadiv label {
+    min-width: 95px;
+    display: inline-block;
+    float: left;
+}
+footer{margin-top: 1em;}
